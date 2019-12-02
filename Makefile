@@ -7,7 +7,7 @@ lintdeps:
 	GO111MODULE=off go get github.com/golangci/golangci-lint/cmd/golangci-lint
 
 run-lint:
-	golangci-lint run --enable-all -D lll -D errcheck -D dupl -D gochecknoglobals --deadline 5m
+	golangci-lint run --enable-all -D lll -D errcheck -D dupl -D gochecknoglobals -D wsl -D funlen --deadline 5m
 
 lint: lintdeps run-lint
 
