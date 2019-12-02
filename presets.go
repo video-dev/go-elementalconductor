@@ -59,6 +59,7 @@ type Preset struct {
 	VideoBitrate  string   `xml:"video_description>h264_settings>bitrate,omitempty"`
 	GopSize       string   `xml:"video_description>h264_settings>gop_size,omitempty"`
 	GopMode       string   `xml:"video_description>h264_settings>gop_mode,omitempty"`
+	GopNumBFrames string   `xml:"video_description>h264_settings>gop_num_b_frames,omitempty"`
 	Profile       string   `xml:"video_description>h264_settings>profile,omitempty"`
 	ProfileLevel  string   `xml:"video_description>h264_settings>level,omitempty"`
 	RateControl   string   `xml:"video_description>h264_settings>rate_control_mode,omitempty"`
